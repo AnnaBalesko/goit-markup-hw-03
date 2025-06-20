@@ -22,17 +22,19 @@
 
   <body>
     <!-- ============ Header ========== -->
-    
-      <header class="page-header">
-        <div class="container">
+
+    <header class="page-header">
+      <div class="container header-container">
         <nav class="header-nav">
           <a class="header-logo" href="./index.html"
             >Web<span class="logo-web">Studio</span></a
           >
           <ul class="nav-list">
-            <li><a class="nav-item" href="./index.html">Studio</a></li>
-            <li><a class="nav-item" href="">Portfolio</a></li>
-            <li><a class="nav-item" href="">Contacts</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Studio</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Contacts</a></li>
           </ul>
         </nav>
         <address class="header-address">
@@ -42,7 +44,8 @@
                 class="contacts-link"
                 href="mailto:info@devstudio.com"
                 target="_blank"
-                >info@devstudio.com</a>
+                >info@devstudio.com</a
+              >
             </li>
             <li class="contacts-item">
               <a class="contacts-link" href="tel:+110001111111" target="_blank"
@@ -52,43 +55,44 @@
           </ul>
         </address>
       </div>
-      </header>
-    
+    </header>
+
     <!-- ========= Main ========== -->
- 
+
     <main>
-     <div class="container"></div>
-        <section class="section-hero">
+      <section class="section-hero">
+        <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="hero-btn" type="button">Order Service</button>
-        </section>
-      </div>
-      <div class="container">
-        <section class="section-benefits">
-          <h2 hidden class="our-advantages">Our advantages</h2>
+        </div>
+      </section>
+
+      <section class="section-benefits">
+        <div class="container">
+          <h2 hidden class="our-advantages visually-hidden">Our advantages</h2>
           <ul class="benefits-list">
-            <li>
+            <li class="feature">
               <h3 class="title-benefits">Strategy</h3>
               <p class="title-text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
             </li>
-            <li>
+            <li class="feature">
               <h3 class="title-benefits">Punctuality</h3>
               <p class="title-text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
             </li>
-            <li>
+            <li class="feature">
               <h3 class="title-benefits">Diligence</h3>
               <p class="title-text">
                 Research and confirm brands with the strongest digital growth
                 opportunities and minimize risk.
               </p>
             </li>
-            <li>
+            <li class="feature">
               <h3 class="title-benefits">Technologies</h3>
               <p class="title-text">
                 Design practice focused on digital experiences. We bring forth a
@@ -96,10 +100,11 @@
               </p>
             </li>
           </ul>
-        </section>
-      </div>
-      <div class="container">
-        <section class="section-team">
+        </div>
+      </section>
+
+      <section class="section-team">
+        <div class="container">
           <h2 class="section-title">Our Team</h2>
           <ul class="list-team">
             <li class="item-team">
@@ -143,16 +148,18 @@
               <p class="page-text">UI Designer</p>
             </li>
           </ul>
-        </section>
-      </div>
-      <div class="container">
-        <section class="section-portfolio">
+        </div>
+      </section>
+      <section class="section-portfolio">
+        <div class="container">
           <h2 class="section-title">Our Portfolio</h2>
           <ul class="list-portfolio">
             <li class="item-portfolio">
               <img src="./images/BankingApp.jpg" alt="BankingApp" width="360" />
-              <h3 class="section-text">Banking App</h3>
-              <p class="page-text">App</p>
+              <div class="info-portfolio">
+                <h3 class="section-text">Banking App</h3>
+                <p class="page-text">App</p>
+              </div>
             </li>
             <li class="item-portfolio">
               <img
@@ -160,8 +167,10 @@
                 alt="CashlessPaymen"
                 width="360"
               />
-              <h3 class="section-text">Cashless Payment</h3>
-              <p class="page-text">Marketing</p>
+              <div class="info-portfolio">
+                <h3 class="section-text">Cashless Payment</h3>
+                <p class="page-text">Marketing</p>
+              </div>
             </li>
             <li class="item-portfolio">
               <img
@@ -169,8 +178,10 @@
                 alt="MeditationApp"
                 width="360"
               />
-              <h3 class="section-text">Meditation App</h3>
-              <p class="page-text">App</p>
+              <div class="info-portfolio">
+                <h3 class="section-text">Meditation App</h3>
+                <p class="page-text">App</p>
+              </div>
             </li>
             <li class="item-portfolio">
               <img
@@ -178,8 +189,10 @@
                 alt="TaxiService"
                 width="360"
               />
-              <h3 class="section-text">Taxi Service</h3>
-              <p class="page-text">Marketing</p>
+              <div class="info-portfolio">
+                <h3 class="section-text">Taxi Service</h3>
+                <p class="page-text">Marketing</p>
+              </div>
             </li>
             <li class="item-portfolio">
               <img
@@ -187,8 +200,10 @@
                 alt="ScreenIllustrations"
                 width="360"
               />
-              <h3 class="section-text">Screen Illustrations</h3>
-              <p class="page-text">Design</p>
+              <div class="info-portfolio">
+                <h3 class="section-text">Screen Illustrations</h3>
+                <p class="page-text">Design</p>
+              </div>
             </li>
             <li class="item-portfolio">
               <img
@@ -196,12 +211,14 @@
                 alt="OnlineCourses"
                 width="360"
               />
-              <h3 class="section-text">Online Courses</h3>
-              <p class="page-text">Marketing</p>
+              <div class="info-portfolio">
+                <h3 class="section-text">Online Courses</h3>
+                <p class="page-text">Marketing</p>
+              </div>
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
     <!-- ============ Footer ======= -->
     <footer class="end-page">
